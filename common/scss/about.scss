@@ -1,0 +1,344 @@
+@import './base.scss';
+
+.header-about{
+  position: relative;
+  height: pc_size(464px);
+  @include mq(md) {
+    height: md_size(615px);
+  }
+  @include mq(sp) {
+    height: sp_size(449px);
+  }
+}
+
+.about{
+  &-hero{
+    &-img-container{
+      background: url('../img/heading-img.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: pc_size(387px);
+      width: pc_size(1100px);
+      position: absolute;
+      z-index: 2;
+      @include mq(md) {
+        height: md_size(529px);
+        width: md_size(587px);
+      }
+      @include mq(sp) {
+        height: sp_size(387px);
+        width: sp_size(287px);
+      }
+    }
+    &-copy-container{
+       position: absolute;
+       right: pc_size(165px);
+       top: pc_size(165px);
+       z-index: 3;
+       @include mq(md) {
+        right: md_size(96px);
+        top: md_size(227px);
+       }
+       @include mq(sp) {
+        right: sp_size(29px);
+        top: sp_size(157px);
+       }
+     }
+     &-main-copy{
+       color: #fff;
+       font-size: 7.2rem;
+       font-family: 'Montserrat', sans-serif;
+       font-weight: bold;
+       letter-spacing: .5rem;
+       margin-bottom: 1.2rem;
+       @include mq(md) {
+        font-size: 5.2rem;
+        letter-spacing: 0.37rem;
+       }
+       @include mq(sp) {
+        font-size: 5.2rem;
+        letter-spacing: 0.05rem;
+       }
+     }
+     &-sub-copy{
+       color: #fff;
+       font-family: 'Noto sans JP';
+       font-size: 2.0rem;
+       letter-spacing: .05rem;
+       font-weight: normal;
+       @include mq(md) {
+        font-size: 1.6rem;
+       }
+     }
+    &-bg-black{
+      width: pc_size(780px);
+      height: pc_size(464px);
+      background: #222222;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      position: absolute;
+      @include mq(md) {
+        height: md_size(615px);
+        width: md_size(406px);
+      }
+      @include mq(sp) {
+        height: sp_size(449px);
+        width: sp_size(198px);
+      }
+    }
+  }
+  &-vision{
+    padding-top: pc_size(124px);
+    @include mq(md) {
+      padding-top: md_size(84px);
+    }
+    @include mq(sp) {
+      padding-top: sp_size(84px);
+    }
+    &-container{
+      padding-left: pc_size(396px);
+      @include mq(md) {
+        padding-left: md_size(150px);
+      }
+      @include mq(sp) {
+        padding-left: sp_size(15px);
+      }
+    }
+    &-title{
+      font-size: 3.2rem;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.25rem;
+      margin-bottom: pc_size(33px);
+      @include mq(md) {
+        margin-bottom: md_size(33px);
+      }
+      @include mq(sp) {
+        margin-bottom: sp_size(40px);
+      }
+    }
+    &-subtitle{
+      font-size: 2.4rem;
+      margin-bottom: pc_size(21px);
+      @include mq(md) {
+        margin-bottom: md_size(25px);
+      }
+      @include mq(sp) {
+        margin-bottom: sp_size(27px);
+      }
+    }
+    &-description{
+      font-size: 1.6rem;
+      font-family: 'Noto sans JP';
+      line-height: 3.2rem;
+      @include mq(md) {
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+      }
+    }
+  }
+  &-message{
+    padding-top: pc_size(130px);
+    height: pc_size(901px);
+    position: relative;
+    @include mq(md) {
+      padding-top: md_size(85px);
+      height: md_size(820px);
+    }
+    @include mq(sp) {
+      padding-top: sp_size(87px);
+      height: sp_size(930px);
+    }
+    &-container{
+      margin: 0 auto;
+      width: pc_size(1100px);
+      @include mq(md) {
+        width: md_size(709px);
+      }
+      @include mq(sp) {
+        width: 100%;
+      }
+    }
+    &-imgcontainer{
+      background: url('../img/ceo-img.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: pc_size(282.5px);
+      width: pc_size(420px);
+      position: absolute;
+      z-index: 2;
+      @include mq(md) {
+        width: md_size(320px);
+        height: md_size(216px);
+      }
+      @include mq(sp) {
+        width: sp_size(340px);
+        height: sp_size(230px);
+      }
+    }
+    &-letter{
+      width: pc_size(770px);
+      height: pc_size(756px);
+      min-height: 450px;
+      background: #f0f0f0;
+      position: absolute;
+      top: pc_size(275px);
+      right: pc_size(170px);
+      z-index: 1;
+      padding-top: pc_size(125px);
+      box-sizing: border-box;
+      @include mq(md) {
+        padding-top: md_size(112px);
+        width: md_size(494px);
+        height: md_size(687px);
+        top: md_size(217px);
+        right: md_size(30px);
+        min-height: 300px;
+      }
+      @include mq(sp) {
+        padding-top: 0px;
+        width: sp_size(345px);
+        height: sp_size(799px);
+        top: sp_size(218px);
+        right: sp_size(16px);
+      }
+      &-container{
+        width: pc_size(400px);
+        margin: 0 auto;
+        @include mq(md) {
+          width: md_size(415px);
+        }
+        @include mq(sp) {
+          padding-top: sp_size(127px);
+          width: sp_size(285px);
+        }
+      }
+      &-title{
+        font-size: 3.2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        margin-bottom: pc_size(23px);
+        letter-spacing: .24rem;
+        @include mq(md) {
+          margin-bottom: md_size(24px);
+        }
+        @include mq(sp) {
+          margin-bottom: sp_size(24px);
+          letter-spacing: 0.15rem;
+        }
+      }
+      &-description{
+        font-size: 1.6rem;
+        font-family: 'Noto sans JP';
+        line-height: 3.2rem;
+        @include mq(md) {
+          line-height: 2.8rem;
+        }
+        @include mq(sp) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  &-company{
+    height: pc_size(923px);
+    padding-top: pc_size(125px);
+    @include mq(md) {
+      padding-top: md_size(85px);
+      height: md_size(754px);
+    }
+    @include mq(sp) {
+      padding-top: sp_size(85px);
+      height: sp_size(1007px);
+    }
+    &-title{
+      font-size: 3.2rem;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.25rem;
+      margin: 0 auto;
+      padding-bottom: pc_size(32px);
+      width: pc_size(1100px);
+      border-bottom: 1px solid #dddddd;
+      @include mq(md) {
+        width: md_size(710px);
+        padding-bottom: md_size(31px);
+      }
+      @include mq(sp) {
+        width: sp_size(345px);
+        padding-bottom: sp_size(29px);
+        margin: 0 auto;
+      }
+    }
+    &-table{
+      width: pc_size(800px);
+      height: pc_size(340px);
+      font-size: 1.6rem;
+      margin-left: pc_size(300px);
+      margin-bottom: pc_size(30px);
+      @include mq(md) {
+        width: calc(100% - 30px);
+        height: md_size(340px);
+        margin-left: md_size(30px);
+        margin-bottom: md_size(40px);
+      }
+      @include mq(sp) {
+        width: 100%;
+        height: sp_size(360px);
+        margin-left: 0;
+        margin-bottom: sp_size(34px);
+        font-size: 1.4rem;
+      }
+      &-container{
+        width: pc_size(1100px);
+        margin: 0 auto;
+        box-sizing: border-box;
+        @include mq(md) {
+          width: md_size(710px);
+        }
+        @include mq(sp) {
+          width: sp_size(345px);
+        }
+      }
+      &-bar{
+          border-bottom: 1px solid #dddddd;
+        &-left{
+          vertical-align: middle;
+          width: 15%;
+          @include mq(md) {
+            width: 20%;
+          }
+          @include mq(sp) {
+            width: 40%;
+          }
+        }
+        &-right{
+          width: 85%;
+          padding-left: pc_size(24px);
+          vertical-align: middle;
+          @include mq(md) {
+            width: 80%;
+            padding-left: md_size(9px);
+          }
+          @include mq(sp) {
+            width: 60%;
+            padding-left: sp_size(25px);
+          }
+
+        }
+      }
+    }
+    &-map{
+      width: 100%;
+      height: pc_size(370px);
+      @include mq(md) {
+        width: md_size(708px);
+        height: md_size(230px);
+      }
+      @include mq(sp) {
+        width: 100%;
+        height: sp_size(470px);
+      }
+    }
+  }
+}
